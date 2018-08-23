@@ -1,0 +1,18 @@
+.my-progress-container{
+  width:50%;
+  height:1.5em;
+  position:relative;
+  background-color:#876647;
+  margin: auto;
+}
+.my-progressbar{
+  background-color:#4CAF50;
+  height:100%;
+  position:absolute;
+  text-align: center;
+  line-height: 20px;
+  color: white;
+}
+.w3-round-xlarge{
+  border-radius:16px!important
+}

@@ -1,0 +1,11 @@
+
+/*Centering the gauge*/
+#canvas {
+	width: 150px;
+	
+}
+/*Custom font for numbers*/
+@font-face {
+	font-family: "bebas";
+	
+}

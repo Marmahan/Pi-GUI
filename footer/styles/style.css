@@ -1,0 +1,73 @@
+.appfooter {
+   color: white;
+   text-align: center;
+   background-color:rgba(0,0,0,0.4);
+   margin-top: 15px;
+   width: 100%;
+   height: 50px;
+}
+
+.topmarginfooter{
+	margin-top: 10px;
+}
+
+/*vertical line after each item in the status bar*/
+.vl {
+    margin-top: 5px;
+    border-left: 2px solid green;
+    height: 40px;
+    padding: 0px;
+    width: 0px;
+}
+
+/*margin on the right should be removed on bigger screens*/
+.speed{
+  margin: 15px 20px 0 0;
+}
+
+/*Door*/
+@keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0.2;
+    }
+    100% {
+        opacity:1;
+    }
+}
+ 
+.blink-image {
+    animation-name: blink; /*bind the animation to the element*/
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-direction:normal;
+    animation-iteration-count: infinite;
+}
+
+#doorblinkingimg{
+    height: 40px;
+    width: 70px;
+    margin-top: 5px;
+}
+
+/*Lights*/
+.lightsblink-image {
+    animation-name: blink; /*bind the animation to the element*/
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-direction:normal;
+    animation-iteration-count: infinite;
+}
+
+#blinkingflight{
+    height: 40px;
+    width: 70px;
+    margin-top: 5px;
+}
+#blinkingblight{
+    height: 40px;
+    width: 70px;
+    margin-top: 5px;
+}

@@ -1,0 +1,103 @@
+body{
+  background-color: #2A2A2A;
+}
+
+@keyframes keybounce {
+  from { transform: translate3d(0, 0, 0);    }
+  to   { transform: translate3d(0, 60px, 0); }
+}
+
+#startcar{
+    height: 40px;
+    animation: keybounce 1s cubic-bezier(0.9,0.05,1,1);
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    transition:  0.9s  ease-in-out;
+    
+}
+
+@keyframes brakerotate{
+    0%{
+    transform: rotateZ(0deg);
+    }
+    100%{
+    transform: rotateZ(180deg);
+
+    }
+}
+
+#brake{
+  height: 120px;
+  animation: brakerotate 2s cubic-bezier(1,0,0.7,1);
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  transition:  0.9s  ease-in-out;
+}
+#brake{
+  animation-play-state: paused;
+}
+
+#mforward{
+  height: 120px;
+  opacity: 0.5;
+}
+
+#mbackward{
+  height: 120px;
+  opacity: 0.5;
+}
+
+/*Centering the gauge*/
+#carspeed {
+  width: 160px;
+  height: 160px;
+  
+}
+/*Custom font for numbers*/
+@font-face {
+  font-family: "bebas";
+  
+}
+
+#outerboarder {
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    width: 700px;
+    height: 320px; 
+    padding-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 2px;
+}
+
+#innerboarder {
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    width: 460px;
+    height: 163px; 
+    margin-left: 5px;
+    padding-left: 40px;
+}
+.speedbutton{
+  margin-top: 30px;
+  width: 50px;
+  opacity: 0.5;
+}
+
+.speedbutton:active{
+    filter: drop-shadow( 3px 3px 3px #222);
+}
+
+#dec{
+  margin-right: 35px;
+  margin-left: 10px;
+}
+
+#backward{
+  margin-top: 25px;
+}
+
+.battery {
+    margin-top: 10px;
+    vertical-align: middle;
+}
+

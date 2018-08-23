@@ -1,0 +1,56 @@
+body{
+   background-color: #2A2A2A;
+}
+
+#border{
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    width: 700px;
+    height: 320px; 
+    padding-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 2px;
+}
+
+@keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0.2;
+    }
+    100% {
+        opacity:1;
+    }
+}
+ 
+.blink-image {
+    animation-name: blink; /*bind the animation to the element*/
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-direction:normal;
+    animation-iteration-count: infinite;
+}
+
+#blinkingman{
+    height: 120px;
+}
+#blinkingtriangle{
+    height: 120px;
+}
+#blinkingcircle{
+    height: 120px;
+}
+#blinkingtraffic{
+    height: 120px;
+}
+#blinkinglane{
+    height: 120px;
+}
+#blinkingobject{
+    height: 120px;
+}
+.battery {
+    margin-top: 10px;
+    vertical-align: middle;
+}
