@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Title</title>
+
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="fontawsome/css/all.css" rel="stylesheet">	
+
+    
+	
+    <link href="footer/styles/style.css" rel="stylesheet">
+    <link href="styles/menustyles.css" rel="stylesheet">
+    
+
+  </head>
+
+  <body>
+  	<div class="container-fluid">
+  		<br>
+
+	  	 <div class="row">
+	  	 	<div class="col-md-12">
+	  	 		<img src="images/logo_tuc.png" alt="TUC" height="50" width="80">
+	  	 	</div>	
+		 </div> 
+  	</div>
+
+
+  	<br>
+  	<div class="container">
+  		<div id="boarder">
+  		 <br><br><br><br>
+		 <div class="row menuitemfirst">
+			<div class="col-md-3 col-sm-3  text-center menuitem iconcontainer" >
+				<img src="images/control.png" alt="Avatar" class="image">
+				<a href="control.html">
+					  <div class="overlay">
+					    <div class="text">Car Control</div>
+					  </div>
+				</a>
+			    	
+			</div>
+			<div class="col-md-3 col-sm-3  text-center menuitem iconcontainer" >
+			    	<img src="images/detect.png" alt="Avatar" class="image">
+				  	<a href="detection.html">
+				  		<div class="overlay">
+				    		<div class="text">Detection</div>
+				  		</div>
+				  	</a>
+			</div>
+			<div class="col-md-3 col-sm-3  text-center menuitem iconcontainer" >
+			    	<img src="images/info.png" alt="Avatar" class="image">
+			    	<a href="overall.html">
+				  		<div class="overlay">
+				    		<div class="text">Overall Status</div>
+				  		</div>
+				  	</a>
+			</div>
+			<div class="col-md-3 col-sm-3  text-center menuitem iconcontainer" >
+			    	<img src="images/protocol.png" alt="Avatar" class="image">
+			    	<a href="am.html">
+					  	<div class="overlay">
+					    	<div class="text">ASE Protocol</div>
+					  	</div>
+					</a>
+			</div>
+		</div>
+	</div> 
+		<div class="row">
+			<div class="appfooter col-md-12 col-sm-12">
+				<!-- blinking door -->
+				<img class="col-md-1 col-sm-1" id="doorblinkingimg" onmouseover="doorblinkover()" onmouseout="doorblinkout()" src="footer/img/door.png" >
+
+				<!-- vertical line -->
+				<div class="vl col-md-1 col-sm-1"></div>
+
+				<!-- speed -->
+				<div class="speed col-md-1 col-sm-1">
+					<p>40KM/H</p>
+				</div>
+					
+				<!-- vertical line -->
+				<div class="vl col-md-1 col-sm-1"></div>
+
+				<!--  lights -->
+				<img class="col-md-1 col-sm-1 lights" id="blinkingflight" onmouseover="flightsblinkover()" onmouseout="flightsblinkout()" src="footer/img/frontlights.png" >
+
+				<!-- vertical line -->
+				<div class="vl col-md-1 col-sm-1"></div>
+
+				<!--  lights -->
+				<img class="col-md-1 col-sm-1 lights" id="blinkingblight" onmouseover="blightsblinkover()" onmouseout="blightsblinkout()" src="footer/img/backlights.png" >
+
+				<!-- vertical line -->
+				<div class="vl col-md-1 col-sm-1"></div>
+
+				<div class="col-md-1 col-sm-1"><i class="fa fa-battery-full fa-2x fa-rotate-270 battery" aria-hidden="true"></i></div>
+
+				<div class="vl col-md-1 col-sm-1"></div>
+				<!-- menu -->
+				<!-- <a href="menu.html" class="btn btn-outline-primary  pull-right topmarginfooter" role="button"><i class="fas fa-bars"></i></a> -->
+			</div>
+		</div>
+
+
+<div class="container">
+  <div class="col-md-6 col-md-offset-4">
+	<div id="battery"><div id="battery-level"></div></div>
+  </div>
+</div>
+
+<script src="jquery/jquery-3.3.1.js"></script>
+<script src="js/myscript.js"></script>
+
+<script type="text/javascript" src="footer/js/script.js"></script>
+<script type="text/javascript" src="control/js/script.js"></script>
+
+<script type="text/javascript" src="signs/js/script.js"></script>
+<script src="bootstrap/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  
+  </body>
+</html>
+
+
+
+
+
+<!-- 		 <div class="row">
+			<div class="col-md-3 col-sm-3  text-center menuitem menuitemfirst" >
+			    	
+			</div>
+			<div class="col-md-3 col-sm-3  text-center menuitem" >
+			    	
+			</div>
+			<div class="col-md-3 col-sm-3  text-center menuitem" >
+			    	
+			</div>
+		 </div> -->

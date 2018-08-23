@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Title</title>
+
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="fontawsome/css/all.css" rel="stylesheet">	
+
+	<link href="control/styles/style.css" rel="stylesheet">
+    <link href="footer/styles/style.css" rel="stylesheet">
+    <link href="signs/styles/styles.css" rel="stylesheet">
+    
+
+  </head>
+
+  <body onload="drawspeed()">
+  	<div class="container-fluid">
+  		<br>
+
+	  	 <div class="row">
+	  	 	<div class="col-md-12">
+	  	 		<img src="images/logo_tuc.png" alt="TUC" height="50" width="80">
+	  	 	</div>	
+		 </div> 
+  	</div>
+
+
+  	<br>
+  	<div class="container">
+  		<div id="outerboarder">
+  			
+		 <div class="row">
+
+		    <div class="col-md-4 col-sm-4 text-center" >
+		    	 <img id="mforward"  src="control/img/forward.png">
+		    </div>
+
+		    <div class="col-md-4 col-sm-4  text-center" >
+				<img id="startcar"  src="control/img/startcar.png">
+		    </div>
+
+		    <div class="col-md-4 col-sm-4  text-center" >
+		    	<img id="brake" src="control/img/brake.png"> 
+		    </div>
+		 </div>
+
+		 <br>
+		 <!-- second row -->
+		 <div class="row">
+
+		    <div class="col-md-4 col-sm-4  text-center" id="backward">
+		    	 <img id="mbackward"  src="control/img/backward.png">
+		    </div>
+
+		    <div class="col-md-8 col-sm-8" id="innerboarder">
+		    	<div class="row">
+			    	<div id="dec" class="col-md-3 col-sm-3  text-center speedbutton">
+			    		<img id="decs" class="speedbutton" src="control/img/dec.png" onclick="decspeed()">
+			    	</div>
+			    	<div class="col-md-6 col-sm-6  text-center">
+			    		<canvas id="carspeed" width="300" height="300"> </canvas>
+			    	</div>
+			    	<div class="col-md-3 col-sm-3  text-center speedbutton">
+			    		<img id="incs" class="speedbutton" src="control/img/inc.png" onclick="incspeed()"> 
+			    	</div>	    		
+		    	</div>
+		    </div>
+		    	 
+		 </div>
+
+		</div>
+		 <div class="row">
+			<div class="appfooter col-md-12 col-sm-12">
+				<!-- blinking door -->
+				<img class="col-md-1 col-sm-1" id="doorblinkingimg" onmouseover="doorblinkover()" onmouseout="doorblinkout()" src="footer/img/door.png" >
+
+				<!-- vertical line -->
+				<div class="vl col-md-1 col-sm-1"></div>
+
+				<!-- speed -->
+				<div class="speed col-md-1 col-sm-1">
+					<p>40KM/H</p>
+				</div>
+					
+				<!-- vertical line -->
+				<div class="vl col-md-1 col-sm-1"></div>
+
+				<!--  lights -->
+				<img class="col-md-1 col-sm-1 lights" id="blinkingflight" onmouseover="flightsblinkover()" onmouseout="flightsblinkout()" src="footer/img/frontlights.png" >
+
+				<!-- vertical line -->
+				<div class="vl col-md-1 col-sm-1"></div>
+
+				<!--  lights -->
+				<img class="col-md-1 col-sm-1 lights" id="blinkingblight" onmouseover="blightsblinkover()" onmouseout="blightsblinkout()" src="footer/img/backlights.png" >
+
+				<!-- vertical line -->
+				<div class="vl col-md-1 col-sm-1"></div>
+
+				<div class="col-md-1 col-sm-1"><i class="fa fa-battery-full fa-2x fa-rotate-270 battery" aria-hidden="true"></i></div>
+
+				<div class="vl col-md-1 col-sm-1"></div>
+				<!-- menu -->
+
+				<a href="menu.html" class="btn btn-outline-primary  pull-right topmarginfooter" role="button"><i class="fas fa-bars"></i></a>
+			</div>
+		</div>
+	</div> 
+
+
+
+<script src="jquery/jquery-3.3.1.js"></script>
+<script src="js/myscript.js"></script>
+
+<script type="text/javascript" src="footer/js/script.js"></script>
+<script type="text/javascript" src="control/js/script.js"></script>
+
+<script type="text/javascript" src="signs/js/script.js"></script>
+<script src="bootstrap/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  
+  </body>
+</html>

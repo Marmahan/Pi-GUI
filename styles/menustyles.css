@@ -1,0 +1,76 @@
+body{
+   background-color: #2A2A2A;
+}
+
+
+.menuitem {
+  height: 150px;
+  /*margin-left: 10px;*/
+  transition: transform .2s; /* Animation */
+}
+
+.menuitemfirst{
+  margin-left: 28px;
+
+}
+
+.menuitem:hover{
+  transform: scale(1.2); /*make it bigger when hover related to the transition above*/
+}
+
+.image {
+  display: block;
+  width: 80%;
+  height: 120px;
+}
+
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 80%;
+  height:0;
+  transition: .5s ease;
+  
+}
+
+.iconcontainer:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#boarder {
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    width: 700px;
+    height: 320px; 
+    padding-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 2px;
+}
+
+.appfooter{
+
+   width: 100%;
+}
+
+.battery {
+    margin-top: 10px;
+    vertical-align: middle;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Title</title>
+    <link href="switch/styles/styles.css" rel="stylesheet">
+    <link href="gauges/progressbar/styles/styles.css" rel="stylesheet">
+    <link href="gauges/circular/styles/circulargauge.css" rel="stylesheet">
+    <link href="switch/styles/styles.css" rel="stylesheet">
+    <!-- Bootstrap -->
+
+  </head>
+  <body>
+  	
+
+
+	<label class="switch">
+	  <input type="checkbox">
+	  <span class="slider round"></span>
+	</label>
+
+
+<div class="my-progress-container w3-round-xlarge">
+  <div id="myBar" class="my-progressbar w3-round-xlarge" style="width:10%" onmouseover="move()">10%</div>
+</div>
+
+
+        <div class="col-md-4 col-sm-4 text-center" >
+           <canvas id="canvas" width="250" height="250"> 
+        </div>
+
+        <div class="col-md-4 col-sm-4  text-center" >
+          <!-- <img src="images/pie_1.png" alt="CG" height="170" width="170"> -->
+          <!-- styles in the switch folder -->
+          <br><br>
+            <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label> 
+        </div>
+
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="gauges/circular/js/js.js"></script>
+
+  
+  </body>
+</html>
